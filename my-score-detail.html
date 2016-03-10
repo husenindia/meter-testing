@@ -11,15 +11,19 @@
 		/* SCORE METER SCRIPT ******************/
         $(window).load(function (){
             cstBaseScore = 7; 
-            cstMyScore = $('.rankmeter-middle-score-bg').html(); // TEMP ADDED : PASS VALUE HERE INSTEAD 
+            cstMyScore = $('.rankmeter-middle-score-bg').html(); 
             cstRankBase = 360 - 45;
-            $rankMeterStatus=$('.rankmeter-statusbg');
+            $rankMeterStatus = $('.rankmeter-statusbg');
+            
+
             if (cstMyScore > 5) {
                 $rankMeterStatus.css({
                     'z-index':'2'
                 })
             }
+
             scoreInPercentage = (cstMyScore * 100) / cstBaseScore;
+            console.log(scoreInPercentage);
             cstrotation = ((scoreInPercentage * cstRankBase) / 100);
             $rankMeterStatus.css({
                 'transform': 'rotate(' + cstrotation + 'deg)',
