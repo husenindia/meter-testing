@@ -1,0 +1,21 @@
+﻿
+/* RANK METER *******/
+.credal-user-img img { border: 10px solid rgba(255, 255, 255, 0.5); border-radius: 50%; -moz-border-radius: 50%; -webkit-border-radius: 50%; bottom: 0; height: 70px; left: -275px; margin: auto; position: absolute; right: 0; top: -220px; width: 70px; z-index: 1; } 
+.credal-flag-img img { bottom: 0; left: 0px; margin: auto; position: absolute; right: 0; top: -350px; width: 111px; height: 70px; z-index: 1; } 
+.rankmeter-outerbg { background:url('../images/rankmeter-outerbg.png') no-repeat; position:absolute; left:0px; right:0px; top:0; bottom:0; margin:auto; border-radius:50%; -moz-border-radius:50%; -webkit-border-radius:50%; z-index:2;  }
+.rankmeter-overlay { border:10px solid rgba(255, 255, 255, 0.10); background:rgba(255, 255, 255, 0.15); height:320px; width:320px; position:absolute; left:0px; right:0px; top:0; bottom:0; margin:auto; border-radius:50%; -moz-border-radius:50%; -webkit-border-radius:50%; z-index:1; }
+.rankmeter-highspeed-redbg { background:url('../images/rankmeter-highspeed-redbg.png') no-repeat; position:absolute; right:0; bottom:0; margin:auto; top:0px; left:0px; z-index:1; }
+.rankmeter-statusbg { background:url('../images/rankmeter-statusbg.png') no-repeat; position:absolute; right:0; bottom:0; margin:auto; top:0px; left:0px; z-index:2; transition: all 1.5s ease-out 1.5s; -moz-transition: all 1.5s ease-out 1.5s; -o-transition: all 1.5s ease-out 1.5s; -webkit-transition: all 1.5s ease-out 1.5s; }  
+.rankmeter-numbers { background:url('../images/rankmeter-numbers.png') no-repeat; position:absolute; right:0; bottom:0; margin:auto; top:0px; left:0px; z-index:3; }
+.rankmeter-speed-divider { background:url('../images/rankmeter-speed-divider.png') no-repeat; position:absolute; right:0; bottom:0; margin:auto; top:0px; left:0px; z-index:3; }
+.rankmeter-mask-when-zero { background:url('../images/rankmeter-mask-when-zero.png') no-repeat; position:absolute; right:0; bottom:0; margin:auto; top:0px; left:0px; z-index:1; }
+.rankmeter-middle-score-bg { background:url('../images/rankmeter-middle-score-bg.png') no-repeat; position:absolute; right:0; bottom:0; margin:auto; top:0px; left:0px; z-index:4; }
+.rankmeter-middle-score-bg, .rankmeter-mask-when-zero, .rankmeter-speed-divider, .rankmeter-numbers, .rankmeter-statusbg, .rankmeter-highspeed-redbg, .rankmeter-outerbg{ height:300px; width:300px; background-size:100% 100%; }
+.rankmeter-middle-score-bg { color:#00385a; font-size:40px; letter-spacing:-1px; line-height:300px; font-family: 'source_sans_prosemibold'; text-align:center;
+}
+/* RANK METER ENDED *******/
+
+.info-btn-grp .sel-category, #scoreboardtabs .select-st-1 { background: #eb5000; background: -moz-linear-gradient(top, #eb5000 0%, #ff6427 100%); background: -webkit-linear-gradient(top, #eb5000 0%,#ff6427 100%); background: linear-gradient(to bottom, #eb5000 0%,#ff6427 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb5000', endColorstr='#ff6427',GradientType=0 ); }
+#scoreboardtabs .select-st-1 .select-wrapper { background-image:none; }
+#scoreboardtabs .info-btn-grp.double .select-st-1, .info-btn-grp.double .select-st-1 .holder, .info-btn-grp.double .sel-category { border-radius: 5px 0px 0px 5px; -moz-border-radius: 5px 0px 0px 5px; -webkit-border-radius: 5px 0px 0px 5px; }
+#scoreboardtabs .select-st-1 { border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; } 

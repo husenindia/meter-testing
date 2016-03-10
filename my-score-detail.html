@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="GTL">
+    <title>Coupon detail page</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script>
+		/* SCORE METER SCRIPT ******************/
+        $(document).ready(function () {
+            cstBaseScore = 7; 
+            cstMyScore = $('.rankmeter-middle-score-bg').html(); // TEMP ADDED : PASS VALUE HERE INSTEAD 
+            cstRankBase = 360 - 45;
+            $rankMeterStatus=$('.rankmeter-statusbg');
+            if (cstMyScore > 5) {
+                $rankMeterStatus.css({
+                    'z-index':'2'
+                })
+            }
+            scoreInPercentage = (cstMyScore * 100) / cstBaseScore;
+            cstrotation = ((scoreInPercentage * cstRankBase) / 100);
+            $rankMeterStatus.css({
+                'transform': 'rotate(' + cstrotation + 'deg)',
+                '-moz-transform': 'rotate(' + cstrotation + 'deg)',
+                '-webkit-transform': 'rotate(' + cstrotation + 'deg)'
+            })
+        })
+		/* ENDED ******************/
+    </script>
+</head>
+<body class="cst-bdy-bg">
+    <div class="score-stats">
+        <div class="rankmeter-outerbg">
+            <div class="rankmeter-mask-when-zero"></div>
+            <div class="rankmeter-statusbg" style="z-index:0"></div> <!-- make z-index 2 when score is greater than 25% -->
+            <div class="rankmeter-numbers"></div>
+            <div class="rankmeter-highspeed-redbg"></div>
+            <div class="rankmeter-speed-divider"></div>
+            <div class="rankmeter-middle-score-bg">5.00</div>
+        </div>
+    </div>
+</body>
+</html>
+
